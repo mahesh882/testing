@@ -4,7 +4,7 @@ var fs = require("fs");
 var cron = require("node-cron");
 const screenshot = require("screenshot-desktop");
 const timestamp = require("time-stamp");
-/*
+
 var log = 0;
 cron.schedule("* * * * *", () => {
     log = log + 1;
@@ -41,7 +41,7 @@ cron.schedule("* * * * *", () => {
         console.log(body);
     });
 });
-*/
+
 var http = require("http");
 
 //create a server object:
