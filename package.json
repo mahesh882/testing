@@ -1,21 +1,22 @@
 {
-  "name": "tes",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "iohook": "^0.6.5",
-    "multiparty": "^4.2.1",
-    "node-cron": "^2.0.3",
-    "request": "^2.88.2",
-    "restler": "^3.4.0",
-    "screenshot": "^0.1.0",
-    "screenshot-desktop": "^1.12.1",
-    "time-stamp": "^2.2.0"
-  }
+    "name": "tes",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "iohook": "^0.6.5",
+        "multiparty": "^4.2.1",
+        "node-cron": "^2.0.3",
+        "request": "^2.88.2",
+        "restler": "^3.4.0",
+        "screenshot": "^0.1.0",
+        "screenshot-desktop": "^1.12.1",
+        "time-stamp": "^2.2.0"
+    }
 }
