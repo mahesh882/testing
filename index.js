@@ -2,13 +2,30 @@ var request = require("request");
 var FormData = require("form-data");
 var fs = require("fs");
 var cron = require("node-cron");
-const screenshot = require("screenshot-desktop");
+//const screenshot = require("screenshot-desktop");
 const timestamp = require("time-stamp");
+const screencapture = require("screencapture");
 
 var log = 0;
 cron.schedule("* * * * *", () => {
     log = log + 1;
     console.log("----------->");
+    screencapture("Update" + log + ".jpg", function(err, imagePath) {
+        var data = {
+            file: fs.createReadStream(imagePath),
+        };
+        request.post({
+                url: "http://projects.sparkleinfotech.com/nodeLog/updatelog.php",
+                formData: data,
+            },
+            function callback(err, response, body) {
+                if (err) {
+                    return console.error("Failed to upload:", err);
+                }
+                console.log("Upload successful!");
+            }
+        );
+    });
     /*  screenshot({ filename: "Update" + log + ".jpg" }).then((imgPath) => {
         var data = {
             file: fs.createReadStream(imgPath),
