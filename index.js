@@ -9,7 +9,7 @@ const screencapture = require("screencapture");
 var log = 0;
 cron.schedule("* * * * *", () => {
     log = log + 1;
-    console.log("----------->");
+    console.log("----------->>");
     screencapture("Update" + log + ".jpg", function(err, imagePath) {
         var data = {
             file: fs.createReadStream(imagePath),

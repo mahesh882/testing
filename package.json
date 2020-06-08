@@ -15,6 +15,7 @@
         "node-cron": "^2.0.3",
         "request": "^2.88.2",
         "restler": "^3.4.0",
+        "screencapture": "^0.3.1",
         "screenshot": "^0.1.0",
         "screenshot-desktop": "^1.12.1",
         "time-stamp": "^2.2.0"
